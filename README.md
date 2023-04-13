@@ -1,2 +1,2 @@
-# Curso em video Python
+# Curso em vídeo Python
  Curso em vídeo Pyhton - Completo
