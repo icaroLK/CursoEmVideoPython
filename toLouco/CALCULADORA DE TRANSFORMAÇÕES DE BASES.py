@@ -22,8 +22,6 @@ if resp == 1:
         print(bin[vez], end='')
         vez += 1
 
-
-
 elif resp == 2:
     dec = int(input('Insira um número em decimal: '))
 
@@ -55,8 +53,6 @@ elif resp == 2:
     while vez != qtd:
         print(hex[vez], end='')
         vez += 1
-
-
 
 elif resp == 3:
     base = int(input('\nInsira uma base entre 2 e 10: '))

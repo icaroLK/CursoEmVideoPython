@@ -8,24 +8,117 @@ resp = int(input('\n\033[97m[1]\033[m Decimal pra \033[35mTUDO\033[m'
 if resp == 1:
     dec = int(input('Insira um número em decimal: '))
     print('\n\033[1;97mDECIMAL = {}\033[m\n'.format(dec))
-    nome = [' ', ' ', 'Binário', 'Ternário', 'Quaternário', 'Pental', 'Senário', 'Septuário', 'Octal', 'Hexadecimal']
 
-    for c in range(2, 8+1):
-        cu = dec
-        binar = []
-        while True:
-            binar.append(cu % c)
-            if cu // c == 0 and cu % c == 0 and cu == 0:
-                break
-            cu = cu // c
-        bin = ((binar[::-1])[1:])
-        qtd = len(bin)
-        vez = 0
-        print("\033[m{} = \033[34m".format(nome[c]), end='')
-        while vez != qtd:
-            print(bin[vez], end='')
-            vez += 1
-        print('')
+    cu = dec
+    binar = []
+    while True:
+        binar.append(cu % 2)
+        if cu // 2 == 0 and cu % 2 == 0 and cu == 0:
+            break
+        cu = cu // 2
+    bin = ((binar[::-1])[1:])
+    qtd = len(bin)
+    vez = 0
+    print("\033[mBinário = \033[34m".format(dec), end='')
+    while vez != qtd:
+        print(bin[vez], end='')
+        vez += 1
+
+    cu = dec
+    binar = []
+    while True:
+        binar.append(cu % 3)
+        if cu // 3 == 0 and cu % 3 == 0 and cu == 0:
+            break
+        cu = cu // 3
+    bin = ((binar[::-1])[1:])
+    qtd = len(bin)
+    vez = 0
+    print("\n\033[mTernário = \033[34m".format(dec), end='')
+    while vez != qtd:
+        print(bin[vez], end='')
+        vez += 1
+
+    base = 4
+    cu = dec
+    binar = []
+    while True:
+        binar.append(cu % base)
+        if cu // base == 0 and cu % base == 0 and cu == 0:
+            break
+        cu = cu // base
+    bin = ((binar[::-1])[1:])
+    qtd = len(bin)
+    vez = 0
+    print("\n\033[mQuaternário = \033[34m".format(dec), end='')
+    while vez != qtd:
+        print(bin[vez], end='')
+        vez += 1
+
+    base = 5
+    cu = dec
+    binar = []
+    while True:
+        binar.append(cu % base)
+        if cu // base == 0 and cu % base == 0 and cu == 0:
+            break
+        cu = cu // base
+    bin = ((binar[::-1])[1:])
+    qtd = len(bin)
+    vez = 0
+    print("\n\033[mPental = \033[34m".format(dec), end='')
+    while vez != qtd:
+        print(bin[vez], end='')
+        vez += 1
+
+    base = 6
+    cu = dec
+    binar = []
+    while True:
+        binar.append(cu % base)
+        if cu // base == 0 and cu % base == 0 and cu == 0:
+            break
+        cu = cu // base
+    bin = ((binar[::-1])[1:])
+    qtd = len(bin)
+    vez = 0
+    print("\n\033[mSenário = \033[34m".format(dec), end='')
+    while vez != qtd:
+        print(bin[vez], end='')
+        vez += 1
+
+    base = 7
+    cu = dec
+    binar = []
+    while True:
+        binar.append(cu % base)
+        if cu // base == 0 and cu % base == 0 and cu == 0:
+            break
+        cu = cu // base
+    bin = ((binar[::-1])[1:])
+    qtd = len(bin)
+    vez = 0
+    print("\n\033[mSeptuário = \033[34m".format(dec), end='')
+    while vez != qtd:
+        print(bin[vez], end='')
+        vez += 1
+
+    base = 8
+    cu = dec
+    binar = []
+    while True:
+        binar.append(cu % base)
+        if cu // base == 0 and cu % base == 0 and cu == 0:
+            break
+        cu = cu // base
+    bin = ((binar[::-1])[1:])
+    qtd = len(bin)
+    vez = 0
+    print("\n\033[mOctal = \033[34m".format(dec), end='')
+    while vez != qtd:
+        print(bin[vez], end='')
+        vez += 1
+
     cu = dec
     hexa = []
     while True:
@@ -46,13 +139,15 @@ if resp == 1:
         if cu // 16 == 0 and cu % 16 == 0 and cu == 0:
             break
         cu = cu // 16
+
     hex = ((hexa[::-1])[1:])
     qtd = len(hex)
     vez = 0
-    print("\033[mHexadecimal = \033[34m".format(dec), end='')
+    print("\n\033[mHexadecimal = \033[34m".format(dec), end='')
     while vez != qtd:
         print(hex[vez], end='')
         vez += 1
+
 elif resp == 2:
     base = int(input('\nInsira uma base entre 2 e 10: '))
     num = int(input('Insira um número na base {}: '.format(base)))
@@ -66,26 +161,37 @@ elif resp == 2:
         if dec[0] != '0':
             cu = base ** (tamanho - vez)
             pos += 1
+
             if pos == tamanho + 1:
                 break
+
             if dec[pos] == '1':
                 resp += cu
+
             if dec[pos] == '2':
                 resp += (cu * 2)
+
             if dec[pos] == '3':
                 resp += (cu * 3)
+
             if dec[pos] == '4':
                 resp += (cu * 4)
+
             if dec[pos] == '5':
                 resp += (cu * 5)
+
             if dec[pos] == '6':
                 resp += (cu * 6)
+
             if dec[pos] == '7':
                 resp += (cu * 7)
+
             if dec[pos] == '8':
                 resp += (cu * 8)
+
             if dec[pos] == '9':
                 resp += (cu * 9)
+
             if dec[pos] == '10':
                 resp += (cu * 10)
             vez += 1
