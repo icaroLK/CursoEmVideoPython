@@ -8,10 +8,10 @@ while True:
     comp = randint(0, 2)
 
     x = int(input('''\nEscolha uma opção:
-    [0] = \033[31mpedra\033[m
-    [1] = \033[1;97mpapel\033[m
-    [2] = \033[34mtesoura\033[m
-    \nQual é sua jogada: '''))
+[0] = \033[31mpedra\033[m
+[1] = \033[1;97mpapel\033[m
+[2] = \033[34mtesoura\033[m
+\nQual é sua jogada: '''))
 
     print('\nJO')
     sleep(0.3)

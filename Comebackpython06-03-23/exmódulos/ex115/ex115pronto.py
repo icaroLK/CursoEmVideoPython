@@ -4,7 +4,7 @@ from time import sleep
 
 
 arq = 'cursoemvideo.txt'
-encont = 'C:\projectONE\Time travel stuff\Curso em vídeo\Comebackpython06-03-23\exmódulos\ex115\{}'.format(arq)
+encont = 'C:\Time Travel Stuff\CursoEmVideoPython\Comebackpython06-03-23\exmódulos\ex115\{}'.format(arq)
 
 
 if arquivadas.arqExiste(encont) == True:
