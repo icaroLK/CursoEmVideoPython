@@ -32,7 +32,7 @@ print('\033[1;97m{}\033[m'.format('—')*40)
 
 resp = ' '
 while resp != 999:
-    resp = int(input('Mostrar os dadeos de qual jogador? [999 para parar]: '))
+    resp = int(input('Mostrar os dados de qual jogador? [999 para parar]: '))
     print('\nLevantamento do jogador {}'.format(time[resp]['Nome']))
     resp = 0
     pos = 0
