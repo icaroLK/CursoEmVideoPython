@@ -53,6 +53,15 @@ print(resp)
 
 
 
+
+
+
+
+
+
+
+
+
 #1 tentativa que ficou bom ate
 '''def ficha(*notas, sit=False):
     dic = {}
